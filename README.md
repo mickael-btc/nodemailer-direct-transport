@@ -1,24 +1,22 @@
 # Direct SMTP transport module for Nodemailer
 
-Applies for Nodemailer v1.x and not for v0.x where transports are built-in.
-
 ## Usage
 
 Install with npm
 
-    npm install nodemailer-direct-transport
+    npm i https://github.com/mickael-btc/nodemailer-direct-transport.git
 
 Require to your script
 
 ```javascript
-var nodemailer = require('nodemailer');
-var directTransport = require('nodemailer-direct-transport');
+const nodemailer = require('nodemailer');
+const directTransport = require('nodemailer-direct-transport');
 ```
 
 Create a Nodemailer transport object
 
 ```javascript
-var transporter = nodemailer.createTransport(directTransport(options))
+let transporter = nodemailer.createTransport(directTransport(options))
 ```
 
 Where
@@ -39,7 +37,7 @@ var transport = nodemailer.createTransport(directTransport({
 }));
 ```
 
-## send callback
+## Send callback
 
 Send callback includes the following arguments
 
