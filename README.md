@@ -32,7 +32,7 @@ Where
 **Example**
 
 ```javascript
-var transport = nodemailer.createTransport(directTransport({
+let transport = nodemailer.createTransport(directTransport({
     name: 'smtp.example.com' // should be the hostname machine IP address resolves to
 }));
 ```
